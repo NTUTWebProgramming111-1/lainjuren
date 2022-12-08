@@ -31,13 +31,13 @@ $(document).ready(function () {
 function showComic(chap) {
     chap = (chap == null) ? allData[allData.length - 1] : allData[chap - 1]
     console.log(chap)
-    $(".container").empty()
+    $(".containeer").empty()
     for (var i = 1; i <= chap.page; i++) {
         var page = i
         if (i < 10) page = "000" + i;
         else if (i < 100) page = "00" + i;
-        var imgHtml = `<div class="row"><div class="col-md-3 col-sm-0"></div><img src="./image/` + chap.chapter + `/` + page + `.jpg" alt="" class="col-md-6 col-sm-12"></div>`;
-        $(".container").append(imgHtml)
+        var imgHtml = `<div class="row"><div class=""></div><img src="./image/` + chap.chapter + `/` + page + `.jpg" alt="" class=""></div>`;
+        $(".containeer").append(imgHtml)
     }
     $("#chapter").attr("placeholder", chap.chapter);
     $("#chapter").attr("value", chap.chapter);

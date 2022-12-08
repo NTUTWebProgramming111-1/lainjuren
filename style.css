@@ -1,7 +1,22 @@
-body{
+body {
     background-color: black;
 }
-div{
+
+div {
     padding: 0%;
     margin: 0%;
+}
+.containeer {
+    margin: 0 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        width: 100%;
+        position: absolute;
+    }
+
+    .containeer {
+        margin: 0px;
+    }
 }
